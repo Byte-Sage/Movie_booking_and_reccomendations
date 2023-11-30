@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommendations</title>
+  <link rel="stylesheet" href="recom.css">
+</head>
+
+<body>
+  <ul class="navbar">
+    <li><a href="Index.html">Home</a></li>
+    <li><a href="Index.html">Movies</a></li>
+    <li><a href="ls.html" class="nav-link">login-signup</a></li>
+
+  </ul>
+
+  <h1>Movie Recommendations</h1>
+
+  <div class="genre-options">
+    <div class="genre-option" onclick="showAdventureMovies()">
+      <h3>Adventure</h3>
+    </div>
+    <div class="genre-option" onclick="showSciFiMovies()">
+      <h3>Sci-fi</h3>
+    </div>
+    <div class="genre-option" onclick="showRomanceMovies()">
+      <h3>Romance</h3>
+    </div>
+  </div>
+
+  <div class="movie-recommendations" id="adventureMovies">
+    <div class="movie-recommendation">
+      <img src="images/joker.jpeg" alt="Adventure Movie 1">
+      <h3>JOKER</h3>
+    </div>
+    <div class="movie-recommendation">
+      <img src="images/download (3).jpeg" alt="Adventure Movie 2">
+      <h3>AVATAR</h3>
+    </div>
+    <div class="movie-recommendation">
+      <img src="images/download (7).jpeg" alt="Adventure Movie 3">
+      <h3>Final Destination</h3>
+    </div>
+  </div>
+
+  <div class="movie-recommendations" id="sciFiMovies">
+    <div class="movie-recommendation">
+      <img src="images/download (6).jpeg" alt="Sci-fi Movie 1">
+      <h3>Sci-fi Movie 1</h3>
+    </div>
+    <div class="movie-recommendation">
+      <img src="scifi_movie2.jpg" alt="Sci-fi Movie 2">
+      <h3>Sci-fi Movie 2</h3>
+    </div>
+    <div class="movie-recommendation">
+      <img src="scifi_movie3.jpg" alt="Sci-fi Movie 3">
+      <h3>Sci-fi Movie 3</h3>
+    </div>
+  </div>
+
+  <div class="movie-recommendations" id="romanceMovies">
+    <div class="movie-recommendation">
+      <img src="romance_movie1.jpg" alt="Romance Movie 1">
+      <h3>Romance Movie 1</h3>
+    </div>
+    <div class="movie-recommendation">
+      <img src="romance_movie2.jpg" alt="Romance Movie 2">
+      <h3>Romance Movie 2</h3>
+    </div>
+    <div class="movie-recommendation">
+      <img src="romance_movie3.jpg" alt="Romance Movie 3">
+      <h3>Romance Movie 3</h3>
+    </div>
+  </div>
+
+  <script>
+    function showAdventureMovies() {
+      document.getElementById("adventureMovies").style.display = "flex";
+      document.getElementById("sciFiMovies").style.display = "none";
+      document.getElementById("romanceMovies").style.display = "none";
+    }
+
+    function showSciFiMovies() {
+      document.getElementById("adventureMovies").style.display = "none";
+      document.getElementById("sciFiMovies").style.display = "flex";
+      document.getElementById("romanceMovies").style.display = "none";
+    }
+
+    function showRomanceMovies() {
+      document.getElementById("adventureMovies").style.display = "none";
+      document.getElementById("sciFiMovies").style.display = "none";
+      document.getElementById("romanceMovies").style.display = "flex";
+    }
+  </script>
+</body>
+
+</html>

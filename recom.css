@@ -1,0 +1,143 @@
+/* Your existing CSS styles */
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZ1bGwlMjBzY3JlZW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar li a:hover {
+    background-color: #555;
+  }
+  
+  .genre-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .genre-option {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .genre-option:hover {
+    background-color: #ddd;
+  }
+  
+  .genre-option h3 {
+    font-size: 24px;
+  }
+  
+  .movie-popup {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .movie-popup h4 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+  
+  .movie-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .movie-popup li {
+    margin-bottom: 5px;
+  }
+  
+  /* Custom styles for movie recommendations */
+  
+  .movie-recommendations {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .movie-recommendation {
+    width: 300px;
+    margin: 10px; 
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .movie-recommendation img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-recommendation h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  /* Rest of your CSS styles */
+.movie-reccomendation {
+  width: 300px:
+  marginL: 10px:
+  padding; 10px::after
+  backgroud-color::after #fff
+  box-shadow::after
+  border-radius : 5px;
+  margin-bottom: 10px;
+  .movie-reccomendations img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+}
